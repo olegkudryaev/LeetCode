@@ -47,12 +47,12 @@ public class RichestCustomerWealth {
 
     public static int maximumWealth(int[][] accounts) {
         int result = 0;
-        for (int i = 0; i < accounts.length; i++) {
+        for (int[] account : accounts) {
             int clientAccount = 0;
-            for (int j = 0; j < accounts[i].length; j++) {
-                clientAccount += accounts[i][j];
+            for (int i : account) {
+                clientAccount += i;
             }
-            if (clientAccount > result){
+            if (clientAccount > result) {
                 result = clientAccount;
             }
         }
