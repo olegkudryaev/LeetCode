@@ -76,24 +76,22 @@ public class ThreeSum {
         //{-4, -1, -1, 0, 1, 2}
         List<List<Integer>> result = new ArrayList<>();
         for (int i = 0; i < sortedArray.length; i++) {
-            int low = i + 1;
-            int high = sortedArray.length - 1;
+            int left = i + 1;
+            int right = sortedArray.length - 1;
             if (i > 0 && sortedArray[i] == sortedArray[i - 1]) {
                 continue;
             }
-            while (low < high) {
-                int sum = sortedArray[i] + sortedArray[low] + sortedArray[high];
+            while (left < right) {
+                int sum = sortedArray[i] + sortedArray[left] + sortedArray[right];
                 if (sum < 0) {
-                    low++;
+                    left++;
                 } else if (sum > 0) {
-                    high--;
+                    right--;
                 } else {
-                    List<Integer> expect = List.of(sortedArray[i], sortedArray[low], sortedArray[high]);
-                    result.add(expect);
-                    low++;
-                    while (sortedArray[low] == sortedArray[low - 1] && low < high) {
-                        low++;
-                    }
+                    result.add(List.of(sortedArray[i], sortedArray[left], sortedArray[right]));
+                    do {
+                        left++;
+                    } while (left < right && sortedArray[left] == sortedArray[left - 1]);
                 }
             }
         }
