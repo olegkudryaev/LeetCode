@@ -18,7 +18,7 @@ class ThreeSumTest {
         List<Integer> expect1 = List.of(-1, 0, 1);
         List<Integer> expect2 = List.of(-1, -1, 2);
         List<List<Integer>> expect = List.of(expect2, expect1);
-        List<List<Integer>> result = threeSum.threeSum(nums);
+        List<List<Integer>> result = ThreeSum.threeSum(nums);
 
         Assertions.assertEquals(expect, result);
     }
