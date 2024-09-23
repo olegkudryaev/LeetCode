@@ -41,15 +41,32 @@ public class MissingNumber {
      * Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
      */
     public static int missingNumber(int[] nums) {
-        int[] array = Arrays.stream(nums).sorted().toArray();
-        int result = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (i != array[i]) {
-                result = i;
-                return result;
-            }
+//        int[] array = Arrays.stream(nums).sorted().toArray();
+//        int result = 0;
+//        for (int i = 0; i < array.length; i++) {
+//            if (i != array[i]) {
+//                result = i;
+//                return result;
+//            }
+//        }
+//        result = array.length;
+//        return result;
+
+//        int sum = Arrays.stream(nums).sum();
+//        int sum2 = 0;
+//        for (int i = 0; i < nums.length + 1; i++) {
+//            sum2 += i;
+//        }
+//        return sum2 - sum;
+
+        int n = nums.length;
+        int expectedSum = (n * (n + 1)) / 2;
+        int actualSum = 0;
+
+        for (int num : nums) {
+            actualSum += num;
         }
-        result = array.length;
-        return result;
+
+        return expectedSum - actualSum;
     }
 }
