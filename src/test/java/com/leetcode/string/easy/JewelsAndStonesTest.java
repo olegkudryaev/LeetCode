@@ -1,4 +1,4 @@
-package com.leetcode.string;
+package com.leetcode.string.easy;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

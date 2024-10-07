@@ -1,4 +1,4 @@
-package com.leetcode.string;
+package com.leetcode.string.easy;
 
 public class GoalParserInterpretation {
 
