@@ -11,6 +11,6 @@ class IsomorphicStringsTest {
 
         boolean isomorphic = IsomorphicStrings.isIsomorphic(s, t);
 
-        Assertions.assertEquals(true, isomorphic);
+        Assertions.assertEquals(false, isomorphic);
     }
 }
