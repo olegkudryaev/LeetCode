@@ -1,8 +1,4 @@
-package com.leetcode.array;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package com.leetcode.array.medium;
 
 public class ProductOfArrayExceptSelf {
 

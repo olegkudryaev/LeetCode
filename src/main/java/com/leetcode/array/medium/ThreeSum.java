@@ -1,9 +1,8 @@
-package com.leetcode.array;
+package com.leetcode.array.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.IntStream;
 
 public class ThreeSum {
     /**

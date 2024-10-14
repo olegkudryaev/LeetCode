@@ -1,7 +1,4 @@
-package com.leetcode.array;
-
-import java.util.Arrays;
-import java.util.OptionalInt;
+package com.leetcode.array.medium;
 
 public class FindMinimumInRotatedSortedArray {
     /**
