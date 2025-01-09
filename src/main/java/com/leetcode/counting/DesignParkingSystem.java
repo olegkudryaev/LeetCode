@@ -1,8 +1,5 @@
 package com.leetcode.counting;
 
-import lombok.Data;
-
-@Data
 public class DesignParkingSystem {
     /**
      * 1603. Design Parking System
