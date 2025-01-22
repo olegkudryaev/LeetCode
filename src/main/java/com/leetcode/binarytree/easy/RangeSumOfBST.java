@@ -31,25 +31,17 @@ public class RangeSumOfBST {
      * 1 <= low <= high <= 105
      * All Node.val are unique.
      */
-    private static int num = 0;
-
     public static int rangeSumBST(TreeNode root, int low, int high) {
-        preOrderTraversal(root, low, high);
-
-
-        return num;
-    }
-
-    private static void preOrderTraversal(TreeNode root, int low, int high) {
         if (root == null) {
-            return;
+            return 0;
         }
-        if(root.val >= low && root.val <= high){
-            num += root.val;
-        }
-        System.out.println(root.val);
-        preOrderTraversal(root.right, low, high);
-        preOrderTraversal(root.left, low, high);
+
+        int currentVal = (root.val >= low && root.val <= high) ? root.val : 0;
+
+        int leftSum = rangeSumBST(root.left, low, high);
+        int rightSum = rangeSumBST(root.right, low, high);
+
+        return currentVal + leftSum + rightSum;
     }
 }
 
