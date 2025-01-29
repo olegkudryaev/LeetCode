@@ -1,4 +1,4 @@
-package com.leetcode.bitmanipulation;
+package com.leetcode.bitmanipulation.easy;
 
 public class DecodeXORedArray {
     /**
