@@ -70,4 +70,28 @@ public class FindThePrefixCommonArrayOfTwoArrays {
 
         return result;
     }
+
+//    public static int[] findThePrefixCommonArray(int[] A, int[] B) {
+//
+//        int n = A.length;
+//        boolean[] visitedA = new boolean[n+1];
+//        boolean[] visitedB = new boolean[n+1];
+//
+//        int[] soln = new int[n];
+//        int count = 0;
+//
+//        for(int i=0; i<n; i++) {
+//            visitedA[A[i]] = true;
+//            visitedB[B[i]] = true;
+//            if(A[i] == B[i]) {
+//                count++;
+//            } else {
+//                if(visitedA[A[i]] == true  && visitedB[A[i]] == true) count++;
+//                if(visitedA[B[i]] == true  && visitedB[B[i]] == true) count++;
+//            }
+//            soln[i] = count;
+//        }
+//        return soln;
+//
+//    }
 }
