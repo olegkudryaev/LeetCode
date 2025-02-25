@@ -60,15 +60,16 @@ public class GenerateBinaryStringsWithoutAdjacentZeros {
         }
 
         if (flag || i == 0) {
-            subans.append(zero);
             flag = false;
-            genbin(n, i + 1);
+            subans.append(zero);
+            i = i + 1;
+            genbin(n, i);
             subans.deleteCharAt(subans.length() - 1);
         }
-
         flag = true;
         subans.append(one);
-        genbin(n, i + 1);
+        i = i + 1;
+        genbin(n, i);
         subans.deleteCharAt(subans.length() - 1);
     }
 
