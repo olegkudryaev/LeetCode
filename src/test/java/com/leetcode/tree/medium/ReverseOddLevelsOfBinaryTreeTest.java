@@ -1,4 +1,4 @@
-package com.leetcode.medium;
+package com.leetcode.tree.medium;
 
 import com.leetcode.binarytree.medium.BinarySearchTreeToGreaterSumTree;
 import com.leetcode.tree.medium.ReverseOddLevelsOfBinaryTree;
