@@ -54,17 +54,16 @@ public class CountNodesEqualToAverageOfSubtree {
             return new int[]{0, 0};
         }
 
-        int [] subLeft = calculateSubtreeValues(root.left);
-        int [] subRight = calculateSubtreeValues(root.right);
+        int[] subLeft = calculateSubtreeValues(root.left);
+        int[] subRight = calculateSubtreeValues(root.right);
 
-        int sum = subRight[0] + subLeft[0] + root.val;
-        int numberOfNodes = subRight[1] + subLeft[1]  + 1;
+        int numberOfNodes = subLeft[0] + subRight[0] + 1;
+        int aver = subLeft[1] + subRight[1] + root.val;
 
-        if(sum / numberOfNodes == root.val){
+        if(aver / numberOfNodes == root.val){
             matchingSubtreeCount++;
         }
-
-        return new int[]{sum, numberOfNodes};
+        return new int[]{numberOfNodes, aver};
     }
 
 
