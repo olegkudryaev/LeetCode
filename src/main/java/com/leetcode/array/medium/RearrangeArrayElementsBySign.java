@@ -1,8 +1,5 @@
 package com.leetcode.array.medium;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RearrangeArrayElementsBySign {
 
     public static int[] rearrangeArray(int[] nums) {
