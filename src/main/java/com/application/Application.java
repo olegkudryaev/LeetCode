@@ -8,7 +8,9 @@ public class Application {
 
     public static void main(String[] args) {
         String n = "123";
-        method(n);
+        method(n);  
+        System.out.println(n);
+        System.out.println(n);
     }
 
     public static void method(String n){
