@@ -30,8 +30,5 @@ public class FindCorrespondingNodeOfBinaryTreeInCloneOfThatTreeTest {
                 FindCorrespondingNodeOfBinaryTreeInCloneOfThatTree.getTargetCopy(treeNode1, cloneTreeNode1, treeNode3);
 
         Assertions.assertEquals(cloneTreeNode3, targetCopy);
-
-
     }
-
 }
